@@ -99,7 +99,7 @@
 <section class="section">
   <div class="container is-widescreen">
     <h2 class="title is-3 no-bottom">COLMAP-free NVS Comparisons with RoDynRF on DAVIS</h2>
-    <div class="content has-text-justified">We compare our SplineGS with the <i>COLMAP-free</i> novel view synthesis method RoDynRF [<font color="blue">27</font>]. Each monocular sequence consists of 40-90 frames of resolution 480x854. We provide the fixed-view-varying-time and spiral-zoom renderings and evaluate the quality by blindly image quality assessment via MUSIQ* score (<font color="red">the higher the better</font>).</div>
+    <div class="content has-text-justified">We compare our SplineGS with the <i>COLMAP-free</i> novel view synthesis method RoDynRF [<font color="blue">30</font>]. Each monocular sequence consists of 40-90 frames of resolution 480x854. We provide the fixed-view-varying-time and spiral-zoom renderings and evaluate the quality by blindly image quality assessment via MUSIQ* score (<font color="red">the higher the better</font>).</div>
     <div class="content has-text-justified"><i>*MUSIQ: Multi-scale Image Quality Transformer. In ICCV, 2021.</i></div>
     <div class="video-container" align="center"  style="margin-bottom: 30px;">
       <a onclick="togglePlay()">
@@ -184,7 +184,7 @@
 <section class="section">
   <div class="container is-widescreen">
     <h2 class="title is-3 no-bottom">Novel View Synthesis on NVIDIA</h2>
-    <div class="content has-text-justified">We follow the experimental settings of RoDynRF [<font color="blue">27</font>]. Each monocular training sequence consists of 12 frames of resolution 270x480.</div>
+    <div class="content has-text-justified">We follow the experimental settings of RoDynRF [<font color="blue">30</font>]. Each monocular training sequence consists of 12 frames of resolution 270x480.</div>
     <div class="video-container" align="center" style="margin-bottom: 30px; margin-top: 30px;">
         <video id="nvidia_input" loop playsinline muted controls autoplay style="height: 150px;">
           <source src="./static/video/nvidia/skating_input.mp4" type="video/mp4">
@@ -220,7 +220,7 @@
 <section class="section">
   <div class="container is-widescreen">
     <h2 class="title is-3 no-bottom">Novel View and Time Synthesis on NVIDIA <span style="font-weight: normal;">(more challenging)</span></h2>
-    <div class="content has-text-justified">As discussed in Section <font color="red">5.1</font> in the main paper, we propose to evaluate the rendering for unseen timesteps during training. We follow the dataset sampling strategy in [<font color="blue">22</font>], which samples 24 timestamps from the NVIDIA dataset. In addition, to simulate a larger motion, we exclude frames with odd time indices in the training sets.
+    <div class="content has-text-justified">As discussed in Section <font color="red">5.1</font> in the main paper, we propose to evaluate the rendering for unseen timesteps during training. We follow the dataset sampling strategy in [<font color="blue">25</font>], which samples 24 timestamps from the NVIDIA dataset. In addition, to simulate a larger motion, we exclude frames with odd time indices in the training sets.
       To ensure all test timestamps are not seen during training, and thus, to create a more <i>challenging</i> novel view and time synthesis validation, we exclude frames with even time indices in the test sets. Each training frame has the resolution 288x540.</div>
     <div class="video-container" align="center" style="margin-bottom: 30px; margin-top: 30px;">
         <video id="nvidia_low_input" loop playsinline muted controls autoplay style="height: 150px;">
